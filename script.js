@@ -1,39 +1,28 @@
-/* If you're feeling fancy you can add interactivity 
-    to your site with Javascript */
 
-// prints "hi" in the browser's dev tools console
-/* JAVASCRIPT, SEPT 13 */
-
-/* WHILE LOOP */
+var myWrapper = document.getElementById("wrapper")
+ ;
 
 
-var myWrapper = document.getElementById("wrapper");
-
-
-var myVar = '<h1>string',
-	newVar = myVar + 5 + ' another string </h1>';
-
-// console.log(newVar);
-
-//myWrapper.innerHTML = newVar;
 
 /******************/
 /*****FOR LOOP w/ TEMPLATE LITERAL *******/
-	var changingColor = 10;
+	var changingColor = 100;
 
-	for (var i = 0; i < 10; i++) {
+	for (var i = 0; i < 100; i++) {
 
-		changingColor = changingColor + 10;
+		changingColor = changingColor + 100;
+    
+    
 
 		var degrees;
 
 		if(i % 2 === 0){
 			// even
-			degrees = (i/10) * 360;
+			degrees = (i/100) * 360;
 			console.log("i: " + i, degrees)
 		}else{
 			// odd
-			degrees = ((i-1)/10) * 360;
+			degrees = ((i-1)/100) * 360;
 			console.log("i: " + i, degrees)
 		}
 
@@ -51,14 +40,14 @@ var myVar = '<h1>string',
 		`;
 
 
-		var starRotate = 35 + ((i/10) * 80);
+		var infiniteRotate = 45 + ((i/100) * 80);
 
 
 
 		var mySecondModule = `
-			<div class="star_wrapper">
+			<div class="infinite_wrapper">
 
-				<div class="star-five" style="transform: rotate(${starRotate}deg);"></div>
+				<div class="infinite-five" style="transform: rotate(${infiniteRotate}deg);"></div>
 
 			</div>
 		`;
@@ -84,34 +73,6 @@ var myVar = '<h1>string',
 	// afterend (after an element is completed)
 
 
-
-
-/******************/
-/*****WHILE LOOP*******/
-var i = 0;
-var myString = "hello"; 
-
-	console.log(myString.length)
-
-while (i < 10 && myString === "hello") {
-    console.log("The number is " + i, myString);
-	
-	myString += "!";
-	i++;    
-}
-
-
-/******************/
-
-
-	var randomNumber = Math.random();
-
-	console.log("random number:", randomNumber * 15, Math.round(randomNumber * 15))
-
-	// Math.round(NUMBER)
-	// Math.ceil(NUMBER) -------> rounds up
- 	// Math.floor(NUMBER) ------> rounds down
- 	// Math.PI ----> Math.____ supports most math functions/equations
 
 
 
