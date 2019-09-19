@@ -3,6 +3,14 @@ var myWrapper = document.getElementById("wrapper")
  ;
 
 
+	
+	for (var i = 0; i < 150; i++) {
+		myWrapper.innerHTML +=
+		 '<div class="patternUnit" style="background-color: rgb('+ (300 - (i*14)) +',' + (i*3) + ',0); transform: rotate('+ (2 + i) +'deg);"></div>';
+
+	}
+
+
 
 /******************/
 /*****FOR LOOP w/ TEMPLATE LITERAL *******/
@@ -60,18 +68,7 @@ var myWrapper = document.getElementById("wrapper")
 			myWrapper.insertAdjacentHTML('afterbegin' , myModule);
 		}
 
-		
-		//myWrapper.innerHTML = myModule; // overrides the innerHTML content
 	}
-
-
-
-	// afterbegin (after the start of our wrapper)
-	// beforeend (before the end of wrapper)
-
-	// beforebegin (before a specific element starts)
-	// afterend (after an element is completed)
-
 
 
 
