@@ -1,11 +1,75 @@
 /* CSS files add styling rules to your content */
 
-body {
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2em;
+*{
+	padding: 0;
+	margin: 0;
+	font-style: normal;
+	font-weight: normal;
 }
 
-h1 {
-  font-style: italic;
-  color: #373fff;
+body, html{
+	padding: 0;
+	margin: 0;
+	font-size: 20px;
 }
+
+
+.module{
+	position: relative;
+	width: 1vw;
+	height: 1px;
+
+}
+
+.module_child{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin-top: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	margin-right: auto;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: white;
+
+}
+
+
+
+	.star_wrapper{
+		width: 100vw;
+		height: 200px;
+	}
+
+ .star-five{
+      position: relative;
+     left:600px;
+      width: 212px;
+      height: 100px;
+      box-sizing: content-box;
+    }
+   .star-five:before,
+ .star-five:after {
+      content: "";
+      box-sizing: content-box;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      border: 20px solid yellow;
+      border-radius: 50px 50px 0 50px;
+      transform: rotate(-45deg);
+    }
+    .star-five:after {
+      left: auto;
+      right: 0;
+      border-radius: 50px 50px 50px 0;
+      transform: rotate(45deg);
+    }
+
